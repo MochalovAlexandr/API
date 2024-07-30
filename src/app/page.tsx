@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import 'swiper/css';
-// import 'swiper/css/autoplay';
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
@@ -15,14 +14,12 @@ import { dataApi } from "./getDataWithRtkq";
 
 
 export default function Page() {
-  // const [data, setData] = useState();
   const dispatch = useDispatch();
   const dataRedux = useSelector((state: RootState) => state.data.data);
 
   const {data } = dataApi.useGetProductListQuery();
   console.log(data);
   dispatch({type: 'data/dataFromApi', payload: data});
-  // console.log(dataRedux);
 
   type Data = {
     id: number,
@@ -31,29 +28,7 @@ export default function Page() {
     description: string,
     image: string,
   }
-
-  // useEffect(()=>{
-  //   const fetchData = async (): Promise<any>=> {
-  //     const response = await fetch('https://fakestoreapi.com/products?limit=5');
-  //     if(response.ok){
-  //       const data = await response.json();
-
-        // setData(data);
-        // console.log(data);
-        // dispatch({type: 'data/dataFromApi', payload: data});
-  //     }      
-  //   }
-  //   fetchData();
-    
-  // },[dispatch]);
-
-  // console.log(store)
   
-
-  // dispatch({type: 'data', payload: data});
-  
-
-
   return (
       <main className={styles.main}>
         <h1 className={styles.title}>Слайдер</h1>        

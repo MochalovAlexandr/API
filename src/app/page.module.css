@@ -1,7 +1,6 @@
 .main{
   width: 80%;
   margin: 0 auto;  
-  /* background-color: aquamarine; */
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -15,7 +14,6 @@
   width: 80%;
   margin: 0 auto;
   min-height: 300px;
-  /* outline: 1px solid #333; */
 }
 
 div.swiper{
@@ -29,12 +27,9 @@ div.swiper{
 }
 
 .swiperslide{
-  display: flex; 
-  /* min-height: 200px; */
-  /* align-self: stretch; */
+  display: flex;  
   min-height: 100%;
   outline: 1px solid #333;
-  /* padding: 5px; */
   background: white;
   box-shadow: 10px 10px 10px rgb(119, 104, 104);
   border-radius: 10px;
@@ -70,13 +65,9 @@ div.swiper{
   background: rgb(119, 116, 112);
 }
 
-/* .image{
-  max-width: 100%;
-} */
-
 .description{
-  white-space: nowrap; /* Текст не переносится */
-  overflow: hidden; /* Обрезаем всё за пределами блока */
+  white-space: nowrap; 
+  overflow: hidden; 
   text-overflow: ellipsis;
 }
 
@@ -84,12 +75,9 @@ div.swiper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* width: 90%; */
   min-height: 200px;
   height: 100%;
   padding: 5px;
-  /* outline: 1px solid #333; */
-  /* background-color: rgb(180, 199, 193); */
   text-decoration: none;
   color: #777;
 }
