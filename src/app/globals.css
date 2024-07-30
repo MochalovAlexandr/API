@@ -1,0 +1,19 @@
+
+
+html,
+body,
+p, 
+div,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+ padding: 0;
+ margin: 0;
+}
+
+body{
+    background: #d8d7d7;
+}

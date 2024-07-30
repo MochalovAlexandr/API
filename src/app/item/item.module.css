@@ -1,0 +1,55 @@
+.cardsmain{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    min-height: 100vh;
+    /* width: 100%; */
+    /* background: #10bc47; */
+    padding-bottom: 15px;
+  }
+
+.backtomain{
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    background: brown;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .backtomain:hover{
+    color: brown;
+    background: antiquewhite;
+  }
+  
+  .backtomain:active{
+    color: brown;
+    background: rgb(119, 116, 112);
+  }
+
+  .ul{
+    padding: 20px;
+  }
+
+  .swiperslide{
+    margin-bottom: 10px;
+    outline: 1px solid #333;
+    border-radius: 15px;
+    padding: 15px;
+    list-style: none;
+    background: white;
+    transition: background .3s ease-in-out;
+  }
+
+  .swiperslide:hover{
+     background: #818181;
+  }
+
+  .link{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }

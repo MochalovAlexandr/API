@@ -1,0 +1,96 @@
+.main{
+  width: 80%;
+  margin: 0 auto;  
+  /* background-color: aquamarine; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swiperwrap{
+  width: 80%;
+  margin: 0 auto;
+  min-height: 300px;
+  /* outline: 1px solid #333; */
+}
+
+div.swiper{
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.swiper div {
+  padding-bottom: 18px; 
+  height: auto;
+}
+
+.swiperslide{
+  display: flex; 
+  /* min-height: 200px; */
+  /* align-self: stretch; */
+  min-height: 100%;
+  outline: 1px solid #333;
+  /* padding: 5px; */
+  background: white;
+  box-shadow: 10px 10px 10px rgb(119, 104, 104);
+  border-radius: 10px;
+  transition: background .3s ease-in-out;
+}
+
+.swiperslide:hover{ 
+  background: #81818138;
+}
+
+.swiperslide:active{ 
+  background: #73f80768;
+}
+
+.button{
+  display: inline-block;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 3px;
+  background: brown;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.button:hover{
+  color: brown;
+  background: antiquewhite;
+}
+
+.button:active{
+  color: brown;
+  background: rgb(119, 116, 112);
+}
+
+/* .image{
+  max-width: 100%;
+} */
+
+.description{
+  white-space: nowrap; /* Текст не переносится */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+  text-overflow: ellipsis;
+}
+
+.link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 90%; */
+  min-height: 200px;
+  height: 100%;
+  padding: 5px;
+  /* outline: 1px solid #333; */
+  /* background-color: rgb(180, 199, 193); */
+  text-decoration: none;
+  color: #777;
+}
+
